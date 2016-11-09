@@ -27,5 +27,5 @@ app.set('view engine', 'ejs');
 require('./config/passport')(passport);
 router(app, passport);
 app.listen(port, function(){
-    console.log('Server start on 8081');
+    console.log('Magic Start on 8081');
 });
