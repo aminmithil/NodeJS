@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>DropDown</title>
+    </head>
+    <body>
+        <form method="POST" action="/choice" encType="multipart/form-data">
+            <table name="choice">
+                <% for(var i=0; i<firstRow.length; i++) {%>
+                <tr>
+                    <td><%= firstRow[i] %>:</td> 
+                    <td><select name="<%= i %>">
+                        <option name="select" value="0">Select</option>
+                        <option name="name" value="1">Name</option>
+                        <option name="mobile" value="2">Mobile Number</option>
+                        <option name="email" value="3">Email</option>
+                        </select>
+                </tr>
+                <% } %>
+            </table>
+            <input type="submit" name="submit">
+        </form>  
+    </body>
+</html>
